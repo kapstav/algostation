@@ -34,6 +34,26 @@ class redwick:
 
 p = redwick()
 print(p.isReachable(64, 71))
+
 '''
+
+
 class Solution:
-    def getCommon(self, nums1: List[int], nums2: List[int]) -> int:
+
+  def getCommon(self,nums1,nums2):
+    if(len(nums1)==0): return -1
+    elif(len(nums1)==0):pass
+    else:
+    
+      nums1.sort()
+      nums2.sort()
+
+      for i in range(len(nums2)):
+        if (nums1[i] in nums2):
+          return nums1[i]
+      return -1
+
+p=Solution()
+print(p.getCommon([1,2,3,4],[8,3,4,5]))
+print(p.getCommon([],[8,3,4,5]))
+ 
