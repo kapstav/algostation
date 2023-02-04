@@ -6,3 +6,7 @@ def getCommon(nums1, nums2):
    return nums1[i]
  return -1
 print(getCommon(nums1, nums2))
+
+var1=[7,8,9,10]
+if 9 in var1:
+  print('ahha')
